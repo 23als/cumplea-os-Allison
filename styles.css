@@ -1,0 +1,119 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(to right top, #ff7596, #ffcccb, #ffecda, #c1f0c1, #86e8e5);
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #ff69b4;
+    color: white;
+    padding: 20px 0;
+    position: relative;
+}
+header h1 {
+    font-size: 3em;
+    font-family: 'Great Vibes', cursive;
+    margin: 0;
+}
+header p {
+    font-size: 1.5em;
+    margin: 0;
+}
+section {
+    padding: 20px;
+}
+.cake-section {
+    position: relative;
+    margin: 20px auto;
+    text-align: center;
+}
+.cake {
+    width: 150px;
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
+}
+.layer {
+    width: 100%;
+    height: 50px;
+    background-color: #ff69b4;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    position:relative;
+}
+.candle {
+    width: 10px;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 5px);
+}
+.flame {
+    width: 10px;
+    height: 20px;
+    background-color: #ff9d00;
+    border-radius: 50% 50% 0 0;
+    position: absolute;
+    top: -20px;
+    left: 0;
+    animation: flicker 1s infinite;
+}
+
+@keyframes flicker {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+.cake-message {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2em;
+    color: #ff69b4;
+    margin-top: 10px;
+}
+.parraf{
+  color: #ff69b4; 
+  font-size: medium; 
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.gallery img {
+    width: 180px;
+    height: 180px;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.gallery img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+}
+.shimmer {
+    color: #ff69b4;
+    font-size: 1.5em;
+    animation: shimmer 2s infinite alternate;
+}
+@keyframes shimmer {
+    from {
+        text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4;
+    }
+    to {
+        text-shadow: 0 0 20px #ff69b4, 0 0 30px #ff69b4;
+    }
+}
+footer {
+    background-color: #ff69b4;
+    color: white;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
